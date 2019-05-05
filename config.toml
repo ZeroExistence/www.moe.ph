@@ -1,0 +1,93 @@
+baseurl = "https://www.moe.ph/"
+title = "moe.ph"
+theme = "pulp"
+canonifyurls = true
+hasCJKLanguage = true
+# pygmentsCodefences = true
+# pygmentsUseClasses = true
+# googleAnalytics = "{your tracking code}"
+
+[taxonomies]
+  series = "series"
+
+[params]
+    author = "moe.ph"
+    avatar = "moe-ph-logo_small.png"
+    favicon = "moe-ph-logo_ico.png"
+    description = "This is the landing page of moe.ph. Most of the projects here are still in progress."
+    descriptionmd = """
+#### You seems lost, my Friend.
+#### This is the landing page for moe.ph. Browse at your own leisure.
+#### Please take note that most of the stuffs here are still in progress.
+    """
+    publicationYear = "2019"
+    listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
+    singlePageDateFormat = "January 2, 2006"
+    custom_css = ["/css/custom.css"]
+    # custom_js = ["/js/custom.js"]
+
+[outputs]
+    section = ["JSON", "HTML"]
+
+[[menu.main]]
+    identifier = "projects"
+    name = "Projects" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/projects/"
+    weight = 10
+
+[[menu.main]]
+    identifier = "events"
+    name = "Upcoming Events" #If display text link, cancel comment out
+    pre = "<i class='fa fa-calendar fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/events/"
+    weight = 11
+
+[[menu.main]]
+    identifier = "about"
+    name = "About Us" #If display text link, cancel comment out
+    pre = "<i class='fa fa-user-circle fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/about/"
+    weight = 12
+
+[[menu.main]]
+    identifier = "initiatives"
+    name = "Initiatives" #If display text link, cancel comment out
+    pre = "<i class='fa fa-community fa-lg'></i>" #Choose your favorite font from Font Awesome
+    url = "/initiatives/"
+    weight = 12
+
+[[menu.xlinks]]
+    identifier = "facebook"
+    name = "Facebook"
+    pre = "<i class='fa fa-facebook fa-lg'></i>"
+    url = "https://facebook.com/be.moe.ph"
+    weight = 15
+
+[[menu.xlinks]]
+    identifier = "messenger"
+    name = "Messenger"
+    pre = "<i class='fa fa-facebook-messenger fa-lg'></i>"
+    url = "https://m.me/be.moe.ph"
+    weight = 16
+
+[[menu.xlinks]]
+    identifier = "twitter"
+    name = "Twitter"
+    pre = "<i class='fa fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/moe_ph_"
+    weight = 20
+
+[[menu.xlinks]]
+    identifier = "github"
+    name = "GitHub"
+    pre = "<i class='fa fa-github fa-lg'></i>"
+    url = "https://github.com/ZeroExistence"
+    weight = 30
+
+[[menu.xlinks]]
+    identifier = "email"
+    name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
+    url = "mailto:kawaii@moe.ph"
+    weight = 40

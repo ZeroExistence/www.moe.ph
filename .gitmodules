@@ -1,0 +1,3 @@
+[submodule "theme/pulp"]
+	path = theme/pulp
+	url = git@github.com:ZeroExistence/pulp.git
